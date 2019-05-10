@@ -4,6 +4,10 @@ def get_guess
   gets.chomp
 end
 
+def computer_guess
+  (1..6).rand
+end
+
 def run_guessing_game
   puts "Keep guessing to continue playing. Enter /'exit/' to exit."
   player_guess = get_guess
