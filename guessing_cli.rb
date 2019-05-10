@@ -11,4 +11,5 @@ end
 def run_guessing_game
   puts "Keep guessing to continue playing. Enter /'exit/' to exit."
   player_guess = get_guess
+  answer = computer_guess
 end
