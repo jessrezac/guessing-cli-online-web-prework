@@ -5,5 +5,5 @@ def get_guess
 end
 
 def run_guessing_Game
-  
+  player_guess = get_guess
 end
