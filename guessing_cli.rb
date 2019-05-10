@@ -5,7 +5,7 @@ def get_guess
 end
 
 def computer_guess
-  [1..6].rand
+  rand(1..6)
 end
 
 def run_guessing_game
