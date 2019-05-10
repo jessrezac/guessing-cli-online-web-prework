@@ -9,7 +9,20 @@ def computer_guess
 end
 
 def run_guessing_game
-  puts "Keep guessing to continue playing. Enter /'exit/' to exit."
-  player_guess = get_guess
-  answer = computer_guess
+  loop do
+    puts "Keep guessing to continue playing. Enter /'exit/' to exit."
+    player_guess = get_guess
+    answer = computer_guess
+
+    if player_guess.to_i == computer_guess
+      puts "You guessed the correct number!"
+    elsif player_guess.to_i > 6
+      puts "Invalid input. Please try again."
+    elsif player_guess == "exit"
+      puts "Goodbye!"
+      break
+    else
+      puts "The computer guessed #{computer_guess}"
+    end
+  end
 end
