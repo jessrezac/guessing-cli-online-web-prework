@@ -10,7 +10,6 @@ end
 
 def run_guessing_game
   loop do
-    puts "Keep guessing to continue playing. Enter /'exit/' to exit."
     player_guess = get_guess
     answer = computer_guess
 
@@ -24,5 +23,7 @@ def run_guessing_game
     else
       puts "The computer guessed #{computer_guess}"
     end
+
+    puts "Keep guessing to continue playing. Enter /'exit/' to exit."
   end
 end
