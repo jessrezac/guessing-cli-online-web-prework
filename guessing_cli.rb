@@ -23,7 +23,5 @@ def run_guessing_game
     else
       puts "The computer guessed #{computer_guess}"
     end
-
-    puts "Keep guessing to continue playing. Enter /'exit/' to exit."
   end
 end
